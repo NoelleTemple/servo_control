@@ -15,7 +15,7 @@ try:
 	while True:
 		ag=raw_input("Enter degree angle: ")
 		test.moveservo(float(ag))
-except KeyboardInterupt:
+except KeyboardInterrupt:
 	print "done" 
 	GPIO.cleanup()
 
