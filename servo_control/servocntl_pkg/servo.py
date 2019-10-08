@@ -24,9 +24,4 @@ class servo:
 		p.start(0)
 		p.ChangeDutyCycle(strtDC)
 		time.sleep(2)
-		p.ChangeDutyCycle(strtDC-5)
-		time.sleep(2)
-		p.ChangeDutyCycle(strtDC+5)
-		time.sleep(2)
 		p.stop
-		GPIO.cleanup()

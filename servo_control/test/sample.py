@@ -11,4 +11,11 @@ test.getinfo()
 #this will setup the GPIO pin as a pwm output pin
 test.setup()
 #this will move the servo, starting with a duty cycle of 7.5%
-test.moveservo(7.5)
+try:
+	while True:
+		ag=raw_input("Enter degree angle: ")
+		test.moveservo(float(ag))
+except KeyboardInterupt:
+	print "done" 
+	GPIO.cleanup()
+
