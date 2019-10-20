@@ -3,12 +3,12 @@
 If you have not cloned this repo yet:
 ```
 cd ~
-git clone https://github.com/NoelleTemple/noelle_digital_controls.git
-cd noelle_digital_controls/servo_control
+git clone https://github.com/NoelleTemple/servo_control.git
+cd servo_control/servo_control
 ```
 If you have cloned this repo:
 ```
-cd ~/noelle_digital_controls/servo_control
+cd ~/servo_control/servo_control
 ```
 
 To use the sample code, set up a servo motor connecting the control signal to pin 35, ground to pin 39, and Vcc to pin 17 (you can change the control signal to any GPIO pin, if you change the code, Vcc to any 3.3 V pin, or 5 V depending on the servo, and ground to any ground pin).
@@ -26,14 +26,14 @@ https://components101.com/servo-motor-basics-pinout-datasheet
 
 Make sure to install the package:
 ```
-cd ~/noelle_digital_controls/servo_control
+cd ~/servo_control/servo_control
 sudo pip install -e .
 ```
 This will automatically find the setup.py file and install the package.
 
 Navigate to Sample code:
 ```
-cd ~/noelle_digital_controls/servo_control/test
+cd ~/servo_control/servo_control/test
 ```
 Run Sample code:
 ```
@@ -56,7 +56,7 @@ The duty cycle is directly related to the position of the servo motor.  The time
 
 To find this code:
 ```
-nano ~/noelle_digital_controls/servo_control/servocntl_pkg/servo.py
+nano ~/servo_control/servo_control/servocntl_pkg/servo.py
 ```
 Here, the description of the servo, the pin number on the board, and the frequency at which the PWM signal operates is initialized.  Also included is a module to print that information, another to setup the pin for PWM output, and another that moves the motor based on the duty cycled entered:
 
